@@ -4,6 +4,10 @@ from flask import Flask, jsonify, request
 import os
 
 app = Flask(__name__)
+@app.route("/status")
+def status():
+    return jsonify({'status': 'online'})
+
 # GET /musicas/
 @app.route('/musicas')
 def musicas():
@@ -60,9 +64,6 @@ def apagar_musica(codigo):
 # import os
 # from flask import Flask
 # app = Flask(__name__)
-# @app.route("/")
-# def index():
-#     return "<h1>Hello World</hi>"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

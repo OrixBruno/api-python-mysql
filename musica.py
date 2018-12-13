@@ -1,7 +1,7 @@
 import peewee
 from flask import Flask, jsonify, request
 
-banco = peewee.MySQLDatabase('sql10223552', user='sql10223552', password='bZfKUM3ad8', host='sql10.freemysqlhosting.net', port=3306)
+banco = peewee.MySQLDatabase('sqlConn', user='user', password='pass', host='server.net', port=3306)
 
 class Musica(peewee.Model):
     codigo = peewee.AutoField()
