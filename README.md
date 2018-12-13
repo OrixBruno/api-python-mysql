@@ -1,4 +1,4 @@
-Api com Python
+Api com Python e MYSQL
 ==============
 
 Exemplo de como desenvolver uma API simples usando python e mysql.
